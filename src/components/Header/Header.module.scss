@@ -1,0 +1,193 @@
+@import 'src/assets/styles/variables.scss';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0 30px 0;
+    border-bottom: 2px solid $gray;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1430px) {
+        padding: 25px 15px 30px 15px;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+    }
+
+    .titles {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        @media screen and (max-width: 520px) {
+            flex-direction: column;
+
+            .logo {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+
+    .title {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0;
+        color: $black;
+
+        @media screen and (max-width: 1200px) {
+            display: none;
+        }
+    }
+
+    .burgerLines {
+        display: none;
+        flex-direction: column;
+        gap: 7px;
+
+        @media screen and (max-width: 705px) {
+            display: flex;
+        }
+
+        .burgerLine {
+            width: 50px;
+            height: 4px;
+            background: $gradient;
+            border-radius: 5px;
+        }
+    }
+
+    .line {
+        width: 2px;
+        height: 45px;
+        margin: 0 45px 0 45px;
+        background: $gray;
+
+        @media screen and (max-width: 1300px) {
+            margin: 0 30px 0 30px;
+        }
+
+        @media screen and (max-width: 1300px) {
+            display: none;
+            margin: 0;
+        }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+
+        @media screen and (max-width: 1300px) {
+            gap: 20px;
+        }
+
+        @media screen and (max-width: 1015px) {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        @media screen and (max-width: 705px) {
+            display: none;
+        }
+    }
+
+    .text {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+        cursor: pointer;
+    }
+
+    .text2 {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    
+    .menu {
+        position: absolute;
+        bottom: -240px;
+        left: -80px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+        padding: 15px;
+        background: $white;
+        box-shadow: $shadow;
+        border-radius: 16px;
+        width: 280px;
+
+        .menuText {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            color: $black;
+
+            &:hover {
+                color: $gray2;
+                transition: 0.3s;
+            }
+        }
+    }
+
+    .contacts {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @media screen and (max-width: 470px) {
+            gap: 15px;
+        }
+
+        @media screen and (max-width: 400px) {
+            gap: 7px;
+        }
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+
+        @media screen and (max-width: 470px) {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    .numbers {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .number {
+        font-size: 21px;
+        font-weight: 600;
+        background: $gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0;
+
+        @media screen and (max-width: 470px) {
+            font-size: 19px;
+        }
+
+        @media screen and (max-width: 400px) {
+            font-size: 17px;
+        }
+    }
+}

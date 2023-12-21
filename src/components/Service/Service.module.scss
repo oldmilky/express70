@@ -1,0 +1,130 @@
+@import 'src/assets/styles/variables.scss';
+
+.service {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 35px auto 0;
+
+    .title {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0 0 45px 0;
+    }
+
+    .content {
+        width: 100%;
+        background: $gray3;
+        padding: 40px 0 40px;
+    }
+
+    .cards {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 100px;
+        justify-content: center;
+
+        @media screen and (max-width: 1430px) {
+            gap: 50px;
+        }
+
+        @media screen and (max-width: 1300px) {
+            gap: 30px;
+        }
+    }
+
+    .cardsSmall {
+        max-width: 1400px;
+        margin: 75px auto 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 100px;
+
+        @media screen and (max-width: 1430px) {
+            margin: 50px auto 0;
+            gap: 50px;
+        }
+
+        @media screen and (max-width: 1300px) {
+            margin: 30px auto 0;
+            gap: 30px;
+        }
+    }
+
+    .card {
+        width: 400px;
+        background: $white;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: $shadow;
+
+        @media screen and (max-width: 430px) {
+            width: 370px;
+        }
+
+        @media screen and (max-width: 390px) {
+            width: 350px;
+        }
+    }
+
+    .image {
+        width: 400px;
+        height: 170px;
+        border-radius: 24px;
+
+        @media screen and (max-width: 430px) {
+            width: 370px;
+        }
+
+        @media screen and (max-width: 390px) {
+            width: 350px;
+            height: 130px;
+        }
+    }
+
+    .subtitle {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 15px 0 15px 0;
+        text-align: center;
+    }
+
+    .text {
+        margin: 10px 0 0;
+        padding: 0 25px 0 25px;
+        font-size: 16px;
+        font-weight: 500;
+        color: $gray2;
+    }
+
+    .textCenter {
+        margin: 10px 0 0;
+        font-size: 16px;
+        font-weight: 500;
+        color: $gray2;
+        text-align: center;
+        padding: 0 25px 0 25px;
+    }
+
+    .buy {
+        width: 140px;
+        height: 40px;
+        color: $white;
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 18px;
+        background: $gradient;
+        border-radius: 16px;
+        margin: 25px auto 25px;
+        box-shadow: $shadow;
+        border-top: 2px solid $black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
